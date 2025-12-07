@@ -1,0 +1,21 @@
+{
+    "name": "cusherah/weather-app",
+    "require": {
+        "guzzlehttp/guzzle": "^7.10",
+        "phpunit/phpunit": "^12.5"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12.5"
+    },
+    "autoload": {
+        "psr-4": {
+            "Cusherah\\WeatherApp\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cusherah",
+            "email": "cusherahkugan@gmail.com"
+        }
+    ]
+}
