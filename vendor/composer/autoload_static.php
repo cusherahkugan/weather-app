@@ -31,9 +31,9 @@ class ComposerStaticInit95e6612bdb897adf7f46e1252b71c7ad
         array (
             'DeepCopy\\' => 9,
         ),
-        'C' => 
+        'A' => 
         array (
-            'Cusherah\\WeatherApp\\' => 20,
+            'App\\' => 4,
         ),
     );
 
@@ -67,7 +67,7 @@ class ComposerStaticInit95e6612bdb897adf7f46e1252b71c7ad
         array (
             0 => __DIR__ . '/..' . '/myclabs/deep-copy/src/DeepCopy',
         ),
-        'Cusherah\\WeatherApp\\' => 
+        'App\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
