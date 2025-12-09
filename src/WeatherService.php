@@ -9,10 +9,10 @@ class WeatherService
     private Client $client;
 
     public function __construct(
-        private string $apiKey = 'cb2d81d6a27ac05f3ca4ad4ddc02caeb',
         private string $apiUrl = 'https://api.openweathermap.org/data/2.5/weather'
     ) {
         $this->client = new Client();
+        $this->apiKey ??= $_ENV['OPENWEATHER_API_KEY'];
     }
 
     public function getWeather(string $city): array
