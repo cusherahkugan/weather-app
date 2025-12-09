@@ -9,10 +9,13 @@ use App\WeatherService;
 
 $weatherService = new WeatherService();
 
-$city = 'Vienna';
-try {
-    $weather = $weatherService->getWeather($city);
-    var_dump($weather);
-} catch (\Exception $e) {
-    echo "Error fetching weather: " . $e->getMessage();
-}
+$city = $argv['1'];
+echo "Fetching weather for $city...\n  " ;
+$weather = $weatherService->getWeather($city);
+
+echo "\n";
+echo "City : " . $weather['city'] . " \n";
+echo "Temperature : " . $weather['temperature'] . "C\n";
+echo "Decription : ". $weather['decription'] . " \n" ;
+echo "Humidity : " . $weather['humidity'] . "%\n";
+
